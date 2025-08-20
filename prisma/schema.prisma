@@ -18,6 +18,7 @@ model Category {
   name        String    @unique
   slug        String    @unique
   description String?
+  order       Int       @default(0)
   products    Product[]
   createdAt   DateTime  @default(now())
 }
@@ -25,10 +26,23 @@ model Category {
 model Product {
   id          String   @id @default(cuid())
   name        String
+  slug        String   @unique
   price       Float
   image       String
   available   Boolean  @default(true)
+  material    String
+  status      String   @default("available") // available, on_order, low_stock, out_of_stock
   categoryId  String
   category    Category @relation(fields: [categoryId], references: [id])
   createdAt   DateTime @default(now())
+  images      ProductImage[]
+}
+
+model ProductImage {
+  id         String   @id @default(cuid())
+  productId  String
+  product    Product  @relation(fields: [productId], references: [id])
+  imageUrl   String
+  altText    String?
+  order      Int      @default(0)
 }

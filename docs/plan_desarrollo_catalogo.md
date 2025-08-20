@@ -1,5 +1,42 @@
 # PLAN DE DESARROLLO PASO A PASO
 
+# ✅ Checklist de Avances y Pendientes (actualizado 16/07/2025)
+
+## Avances
+
+- [x] Proyecto Remix creado y funcionando
+- [x] Tailwind CSS configurado
+- [x] Repositorio Git inicializado
+- [x] Base de datos Supabase conectada
+- [x] Modelos Prisma: Product y Category completos (con order, slug, etc.)
+- [x] Migraciones ejecutadas y Prisma Studio operativo
+- [x] Script de importación desde CSV funcionando (productos y categorías)
+- [x] CSV corregido y datos reales importados
+- [x] Productos y categorías visibles en la base de datos
+- [x] Layout principal, Header y Footer implementados
+- [x] Página principal con grid de productos destacados y nuevos
+- [x] Grid de categorías visual y ordenada
+- [x] Tarjeta de producto con imagen, precio, material y estado
+- [x] Loader en Remix para productos y categorías
+- [x] Consulta y ordenación por campo order en categorías
+- [x] Relación producto-categoría funcional
+- [x] Paleta de colores y tipografía definida (según plan UI)
+- [x] Diseño mobile-first y grid responsive
+- [x] Cards con sombras, bordes redondeados y gradientes
+
+## Pendientes
+
+- [x] Página de detalle de producto con galería de imágenes
+- [x] Integración WhatsApp con mensaje pre-llenado
+- [x] Botón de compartir producto
+- [x] Filtros por categoría, precio, material, disponibilidad
+- [x] Búsqueda simple en catálogo
+- [ ] Subida de imágenes a Cloudinary desde la UI
+- [ ] Optimización de performance y carga de imágenes
+- [ ] Variables de entorno para producción
+- [ ] Deploy en Netlify
+- [ ] Meta tags y SEO básico
+
 ## Catálogo Visual de Accesorios Femeninos
 
 ---
@@ -32,7 +69,6 @@
 
 - Integración WhatsApp
 - Sistema de screenshots optimizado
-- Panel de administración
 - Responsive design
 
 ### **5. Deployment y Configuración**
@@ -519,7 +555,6 @@ export default function AdminProductos() {
 1. Variables de entorno
 2. Configuración de producción
 3. Optimización final
-4. Documentación
 
 **Checklist de Deploy:**
 
@@ -536,8 +571,6 @@ export default function AdminProductos() {
 
 1. Deploy en Vercel
 2. Configurar dominio
-3. Testing en producción
-4. Documentación final
 
 **Proceso de Deploy:**
 
@@ -576,10 +609,9 @@ git push origin main
 | 2      | Galería     | 14h   | Grid de productos funcionando  |
 | 3      | Categorías  | 14h   | Filtros y navegación           |
 | 4      | Detalle     | 14h   | Página de producto + WhatsApp  |
-| 5      | Admin       | 14h   | Panel de administración        |
 | 6      | Deploy      | 14h   | Sitio web live                 |
 
-**Total: 84 horas (8.4 semanas a 10h/semana)**
+**Total: 70 horas (7 semanas a 10h/semana)**
 
 ---
 
@@ -620,7 +652,6 @@ git push origin main
 ### **Testing y Deployment**
 
 - **Performance:** Lighthouse
-- **Mobile Testing:** Chrome DevTools
 - **Deploy:** Vercel CLI
 - **Dominio:** Vercel Domains
 
@@ -652,54 +683,9 @@ git push origin main
 - WhatsApp integrado
 - Screenshots optimizados
 
-### **Semana 5: ✅ Admin**
-
-- Panel de administración funcionando
-- CRUD completo
-- Subida de imágenes
-
 ### **Semana 6: ✅ Deploy**
 
 - Sitio web live
 - Performance optimizada
-- Documentación completa
 
 ---
-
-## 🚨 **PUNTOS CRÍTICOS A MONITOREAR**
-
-### **Semana 2-3: Rendimiento**
-
-- Optimización de imágenes
-- Lazy loading
-- Tiempo de carga
-
-### **Semana 4: Integración WhatsApp**
-
-- Testing en diferentes dispositivos
-- Mensajes pre-llenados correctos
-- Funcionalidad de compartir
-
-### **Semana 5: Panel de Admin**
-
-- Seguridad básica
-- Validación de datos
-- Backup de contenido
-
-### **Semana 6: Deploy**
-
-- Variables de entorno
-- Performance en producción
-- SSL y dominio
-
----
-
-## 📝 **NOTAS IMPORTANTES**
-
-1. **Backup diario:** Commit changes al final de cada día
-2. **Testing mobile:** Revisar en móvil cada nueva funcionalidad
-3. **Performance:** Monitorear tiempo de carga constantemente
-4. **Contenido:** Ir preparando fotos y contenido paralelamente
-5. **Documentación:** Documentar decisiones importantes
-
-**¡Proyecto listo para comenzar! 🚀**
