@@ -1,0 +1,1 @@
+import{j as a}from"./jsx-runtime-0DLF9kdB.js";function s(){return a.jsxs("div",{className:"py-8",children:[a.jsx("h1",{className:"text-2xl font-bold text-pink-600 mb-4",children:"Categoría"}),a.jsx("p",{className:"text-gray-700",children:"Aquí se mostrarán los productos de la categoría seleccionada."})]})}export{s as default};
